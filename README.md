@@ -1,2 +1,2 @@
 # JSLife
-Hosting practice code for JS/React/Typescript tutorials
+Storage for personal practice code for JS/React/Typescript tutorials
