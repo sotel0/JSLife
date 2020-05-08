@@ -1,14 +1,11 @@
-function sayHello(name){
-    console.log('Hellow '+ name);
+function sayHello(name) {
+  console.log("Hellow " + name);
 }
 
-var sayHeloo = function(){
-
-}
+var sayHeloo = function () {};
 
 //sayHello('Isaac');
 console.log("blep");
-
 
 //call a function after a delay
 //setTimeout();
@@ -17,7 +14,7 @@ console.log("blep");
 //repeatedly call a function after a given delay
 //setInterval();
 
-var message = 'dfgdf';
+var message = "dfgdf";
 console.log(message);
 console.log(global.message);
 

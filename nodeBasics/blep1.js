@@ -1,5 +1,3 @@
-
-const log = require('./logger');
+const log = require("./logger");
 console.log(log);
-log('message');
-
+log("message");
