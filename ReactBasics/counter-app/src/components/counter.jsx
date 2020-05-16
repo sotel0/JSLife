@@ -37,6 +37,7 @@ class Counter extends Component {
   render() {
     return (
       <React.Fragment>
+        {this.props.children}
         <img src={this.state.imageUrl} alt="" />
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
         <button
@@ -45,6 +46,10 @@ class Counter extends Component {
           className="btn btn-secondary btn-sm"
         >
           Increment
+        </button>
+        <button onClick={this.props.onDelete} className="btn danger btn-sm m-2">
+          {" "}
+          Delete{" "}
         </button>
         {this.state.tags.length === 0 && "Please create new tag"}
         {this.renderTags()};
