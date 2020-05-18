@@ -29,6 +29,22 @@ class Counter extends Component {
     );
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    //called after componentDidUpdate
+    console.log("prevProps", prevProps);
+    console.log("prevState", prevState);
+
+    if (prevProps.counter.value !== this.props.counter.value) {
+      //ajax call and get new data from server
+    }
+  }
+
+  componentWillUnmount() {
+    console.log(" Counter - Unmount");
+    //can close timers
+    //can close listeners
+  }
+
   render() {
     return (
       <React.Fragment>
